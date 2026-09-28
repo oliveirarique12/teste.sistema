@@ -37,13 +37,13 @@ import {
   User as UserIcon
 } from 'lucide-react';
 import { ProductionItem, ProductionPlan, ComponentType, COMPONENTS, User } from './types';
-import PlanModal from './components/PlanModal';
-import ProductionTable from './components/ProductionTable';
-import ProductionCharts from './components/ProductionCharts';
-import GanttChart from './components/GanttChart';
-import ProductionReport from './components/ProductionReport';
-import AuthScreen from './components/AuthScreen';
-import AdminDashboard from './components/AdminDashboard';
+import PlanModal from "./PlanModal";
+import ProductionTable from "./ProductionTable";
+import ProductionCharts from "./ProductionCharts";
+import GanttChart from "./GanttChart";
+import ProductionReport from "./ProductionReport";
+import AuthScreen from "./AuthScreen";
+import AdminDashboard from "./AdminDashboard";
 
 const formatExcelDate = (val: any): string => {
   if (!val) return '';
