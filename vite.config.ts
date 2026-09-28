@@ -3,8 +3,13 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
+    // Carrega as variáveis de ambiente com segurança
     const env = loadEnv(mode, '.', '');
+    
     return {
+      
+      base: '/teste.sistema',
+      
       server: {
         port: 3000,
         host: '0.0.0.0',
@@ -21,3 +26,4 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
+
